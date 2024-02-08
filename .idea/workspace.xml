@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="More tests in TodoMCV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoMVC.java" afterDir="false" />
     </list>
@@ -47,8 +44,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.TodoMVC.addingItems.executor": "Run",
     "Gradle.TodoMVC.cancelModify.executor": "Run",
     "Gradle.TodoMVC.clearItemByX.executor": "Run",
+    "Gradle.TodoMVC.displayClearCompleted.executor": "Run",
+    "Gradle.TodoMVC.hiddenStatusBar.executor": "Run",
     "Gradle.TodoMVC.incomplete.executor": "Run",
     "Gradle.TodoMVC.modifyItems.executor": "Run",
     "Gradle.TodoMVC.testClearCompleted.executor": "Run",
@@ -63,8 +63,8 @@
     "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TodoMVC.todoCount">
-    <configuration name="TodoMVC.clearItemByX" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TodoMVC.todoBleedOver">
+    <configuration name="TodoMVC.displayClearCompleted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -77,7 +77,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.clearItemByX&quot;" />
+            <option value="&quot;TodoMVC.displayClearCompleted&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoMVC.hiddenStatusBar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TodoMVC.hiddenStatusBar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,30 +160,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.todoCount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TodoMVC.todoCount&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TodoMVC.toggleStatus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TodoMVC.todoCount" />
         <item itemvalue="Gradle.TodoMVC.todoBleedOver" />
         <item itemvalue="Gradle.TodoMVC.testClearCompleted" />
+        <item itemvalue="Gradle.TodoMVC.displayClearCompleted" />
         <item itemvalue="Gradle.TodoMVC.toggleStatus" />
-        <item itemvalue="Gradle.TodoMVC.clearItemByX" />
+        <item itemvalue="Gradle.TodoMVC.hiddenStatusBar" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +223,19 @@
       <option name="presentableId" value="Default" />
       <updated>1707323588863</updated>
     </task>
+    <task id="LOCAL-00001" summary="More tests in TodoMCV">
+      <option name="closed" value="true" />
+      <created>1707394531167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707394531167</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="More tests in TodoMCV" />
+    <option name="LAST_COMMIT_MESSAGE" value="More tests in TodoMCV" />
   </component>
 </project>
