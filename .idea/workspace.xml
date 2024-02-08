@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="More tests in TodoMCV">
+    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Added Assertions to tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoMVC.java" afterDir="false" />
     </list>
@@ -28,6 +30,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -44,6 +53,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.TodoAngularRefactor.addToList.executor": "Run",
+    "Gradle.TodoAngularRefactor.modifyItems.executor": "Run",
     "Gradle.TodoMVC.addingItems.executor": "Run",
     "Gradle.TodoMVC.cancelModify.executor": "Run",
     "Gradle.TodoMVC.clearItemByX.executor": "Run",
@@ -63,8 +74,8 @@
     "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TodoMVC.todoBleedOver">
-    <configuration name="TodoMVC.displayClearCompleted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TodoAngularRefactor.cancelModify">
+    <configuration name="TodoAngularRefactor.addToList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -77,7 +88,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.displayClearCompleted&quot;" />
+            <option value="&quot;TodoAngularRefactor.addToList&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -88,7 +99,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.hiddenStatusBar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.cancelModify" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -101,7 +112,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.hiddenStatusBar&quot;" />
+            <option value="&quot;TodoAngularRefactor.cancelModify&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -112,7 +123,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.testClearCompleted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.modifyItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -125,7 +136,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.testClearCompleted&quot;" />
+            <option value="&quot;TodoAngularRefactor.modifyItems&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +147,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.todoBleedOver" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoMVC.addingItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.todoBleedOver&quot;" />
+            <option value="&quot;TodoMVC.addingItems&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,7 +171,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.toggleStatus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoMVC.tickOff" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.toggleStatus&quot;" />
+            <option value="&quot;TodoMVC.tickOff&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TodoMVC.todoBleedOver" />
-        <item itemvalue="Gradle.TodoMVC.testClearCompleted" />
-        <item itemvalue="Gradle.TodoMVC.displayClearCompleted" />
-        <item itemvalue="Gradle.TodoMVC.toggleStatus" />
-        <item itemvalue="Gradle.TodoMVC.hiddenStatusBar" />
+        <item itemvalue="Gradle.TodoAngularRefactor.cancelModify" />
+        <item itemvalue="Gradle.TodoAngularRefactor.modifyItems" />
+        <item itemvalue="Gradle.TodoAngularRefactor.addToList" />
+        <item itemvalue="Gradle.TodoMVC.tickOff" />
+        <item itemvalue="Gradle.TodoMVC.addingItems" />
       </list>
     </recent_temporary>
   </component>
@@ -231,11 +242,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707394531167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Assertions to tests">
+      <option name="closed" value="true" />
+      <created>1707406109035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707406109035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="More tests in TodoMCV" />
-    <option name="LAST_COMMIT_MESSAGE" value="More tests in TodoMCV" />
+    <MESSAGE value="Added Assertions to tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Assertions to tests" />
   </component>
 </project>

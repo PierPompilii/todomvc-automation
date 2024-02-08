@@ -35,8 +35,7 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        Thread.sleep(2000);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         Assertions.assertEquals("buy milk", firstItem.getText());
     }
     @Test
@@ -46,7 +45,7 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         Actions builder = new Actions(driver);
         builder.doubleClick(firstItem).perform();
         WebElement modifyItem = driver.findElement(By.id("edit-todo-input"));
@@ -65,7 +64,7 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         Actions builder = new Actions(driver);
         builder.doubleClick(firstItem).perform();
         WebElement page = driver.findElement(By.cssSelector("body"));
@@ -74,13 +73,13 @@ public class TodoMVC {
     }
 
     @Test
-    void tickOff() throws Exception{
+    void markComplete() throws Exception{
         driver.get("https://todomvc.com/examples/angular/dist/browser/#/all");
         WebElement inputBox = driver.findElement(By.cssSelector(".new-todo"));
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         WebElement tickBox = driver.findElement(By.cssSelector(".toggle"));
         tickBox.click();
         // assert "buy milk" is in completed status
@@ -96,7 +95,7 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         WebElement tickBox = driver.findElement(By.cssSelector(".toggle"));
         tickBox.click();
         tickBox.click();
@@ -112,11 +111,11 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement firstItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         Actions hover = new Actions(driver);
         hover.moveToElement(firstItem).perform();
-        WebElement buttonX = driver.findElement(By.cssSelector(".destroy"));
-        buttonX.click();
+        WebElement xButton = driver.findElement(By.cssSelector(".destroy"));
+        xButton.click();
         // assert list is empty
         WebElement todoList = driver.findElement(By.tagName("app-todo-list"));
         Assertions.assertEquals("", todoList.getText());
@@ -151,9 +150,9 @@ public class TodoMVC {
         inputBox.click();
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
-        WebElement changeItem = driver.findElement(By.cssSelector(".view > label"));
+        WebElement firstItem = driver.findElement(By.cssSelector("app-todo-item:nth-child(1) label"));
         Actions hover = new Actions(driver);
-        hover.moveToElement(changeItem).perform();
+        hover.moveToElement(firstItem).perform();
         WebElement buttonX = driver.findElement(By.cssSelector(".destroy"));
         buttonX.click();
         // assert the status bar is hidden, if we can't find a solution, take screenshot, assert false display
