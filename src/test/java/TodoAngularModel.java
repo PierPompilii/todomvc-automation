@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.List;
+
 public class TodoAngularModel {
     protected WebDriver driver;
     private By inputBoxBy = By.cssSelector(".new-todo");
@@ -61,4 +63,33 @@ public class TodoAngularModel {
         WebElement page = driver.findElement(pageBy);
         page.click();
     }
+    public Boolean markCompleted() {
+        WebElement tickTodo = driver.findElement(tickBoxFirstTodoBy);
+        tickTodo.click();
+        WebElement completeTodo = driver.findElement(statusCompletedBy);
+        completeTodo.click();
+        return completeTodo.isDisplayed();
+    }
+    public Boolean markIncomplete() {
+        WebElement statusActive = driver.findElement(statusActiveBy);
+        statusActive.click();
+        return statusActive.isDisplayed();
+    }
+    public String getTodoList(){
+        WebElement todoList = driver.findElement(todoListBy);
+        return todoList.getText();
+    }
+    public void clearItemByX() {
+        WebElement firstTodo = driver.findElement(firstTodoBy);
+        Actions hover = new Actions(driver);
+        hover.moveToElement(firstTodo).perform();
+        WebElement xButton = driver.findElement(xButtonBy);
+        xButton.click();
+    }
+    public String getTodoCount() {
+        WebElement todoCount = driver.findElement(todoCountBy);
+        return todoCount.getText();
+    }
+
+
 }

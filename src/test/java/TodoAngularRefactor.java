@@ -40,18 +40,41 @@ public class TodoAngularRefactor {
         Assertions.assertEquals("buy milk", modelPage.getFirstTodo());
     }
 
-    //@Test
-    //public void markComplete() {
-    //    TodoAngularModel modelPage = new TodoAngularModel(driver);
-    //    modelPage.addTodo("buy milk");
-    //    modelPage.markComplete();
-    //    modelPage
-    //    Assertions.assertTrue(modelPage.isDisplayed());
+    @Test
+    public void markTodoAsCompletedTest() {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.markCompleted();
+        Assertions.assertTrue(modelPage.markCompleted());
     }
 
+    @Test
+    public void markAsIncompleteTest() {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.markIncomplete();
+        Assertions.assertTrue(modelPage.markIncomplete());
+    }
 
+    @Test
+    public void clearTodoByXTest() {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.clearItemByX();
+        Assertions.assertEquals("", modelPage.getTodoList());
+    }
+    @Test
+    public void todoCountTest () {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        Assertions.assertEquals("1 item left", modelPage.getTodoCount());
+        modelPage.markCompleted();
+        Assertions.assertEquals("0 items left", modelPage.getTodoCount());
+        modelPage.markIncomplete();
+        modelPage.addTodo("buy bread");
+        Assertions.assertEquals("2 items left", modelPage.getTodoCount());
 
-
+    }
 
 
     @AfterAll

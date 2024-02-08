@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Added Assertions to tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TodoMVC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoMVC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TodoMVC-auto" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -47,6 +55,7 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2c2xgqP3YRYoZf656g0yQ3ggLNt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +63,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.TodoAngularRefactor.addToList.executor": "Run",
+    "Gradle.TodoAngularRefactor.cancelModify.executor": "Run",
+    "Gradle.TodoAngularRefactor.clearTodoByXTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.markAsIncompleteTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.markComplete.executor": "Run",
+    "Gradle.TodoAngularRefactor.markTodoAsCompletedTest.executor": "Run",
     "Gradle.TodoAngularRefactor.modifyItems.executor": "Run",
+    "Gradle.TodoAngularRefactor.todoCountTest.executor": "Run",
     "Gradle.TodoMVC.addingItems.executor": "Run",
     "Gradle.TodoMVC.cancelModify.executor": "Run",
     "Gradle.TodoMVC.clearItemByX.executor": "Run",
@@ -74,8 +89,8 @@
     "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TodoAngularRefactor.cancelModify">
-    <configuration name="TodoAngularRefactor.addToList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TodoAngularRefactor.todoCountTest">
+    <configuration name="TodoAngularRefactor.clearTodoByXTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +103,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.addToList&quot;" />
+            <option value="&quot;TodoAngularRefactor.clearTodoByXTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -99,7 +114,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoAngularRefactor.cancelModify" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.markAsIncompleteTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.cancelModify&quot;" />
+            <option value="&quot;TodoAngularRefactor.markAsIncompleteTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +138,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoAngularRefactor.modifyItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.markComplete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +151,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.modifyItems&quot;" />
+            <option value="&quot;TodoAngularRefactor.markComplete&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +162,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.addingItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.markTodoAsCompletedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +175,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.addingItems&quot;" />
+            <option value="&quot;TodoAngularRefactor.markTodoAsCompletedTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +186,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TodoMVC.tickOff" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoAngularRefactor.todoCountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoMVC.tickOff&quot;" />
+            <option value="&quot;TodoAngularRefactor.todoCountTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TodoAngularRefactor.cancelModify" />
-        <item itemvalue="Gradle.TodoAngularRefactor.modifyItems" />
-        <item itemvalue="Gradle.TodoAngularRefactor.addToList" />
-        <item itemvalue="Gradle.TodoMVC.tickOff" />
-        <item itemvalue="Gradle.TodoMVC.addingItems" />
+        <item itemvalue="Gradle.TodoAngularRefactor.todoCountTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.clearTodoByXTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.markAsIncompleteTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.markTodoAsCompletedTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.markComplete" />
       </list>
     </recent_temporary>
   </component>
