@@ -44,16 +44,17 @@ public class TodoAngularRefactor {
     public void markTodoAsCompletedTest() {
         TodoAngularModel modelPage = new TodoAngularModel(driver);
         modelPage.addTodo("buy milk");
-        modelPage.markCompleted();
-        Assertions.assertTrue(modelPage.markCompleted());
+        modelPage.tickBoxFirst();
+        Assertions.assertTrue(modelPage.isCompleted());
     }
 
     @Test
     public void markAsIncompleteTest() {
         TodoAngularModel modelPage = new TodoAngularModel(driver);
         modelPage.addTodo("buy milk");
-        modelPage.markIncomplete();
-        Assertions.assertTrue(modelPage.markIncomplete());
+        modelPage.tickBoxFirst();
+        modelPage.tickBoxFirst();
+        Assertions.assertTrue(modelPage.isNotComplete());
     }
 
     @Test
@@ -68,9 +69,9 @@ public class TodoAngularRefactor {
         TodoAngularModel modelPage = new TodoAngularModel(driver);
         modelPage.addTodo("buy milk");
         Assertions.assertEquals("1 item left", modelPage.getTodoCount());
-        modelPage.markCompleted();
+        modelPage.tickBoxFirst();
         Assertions.assertEquals("0 items left", modelPage.getTodoCount());
-        modelPage.markIncomplete();
+        modelPage.tickBoxFirst();
         modelPage.addTodo("buy bread");
         Assertions.assertEquals("2 items left", modelPage.getTodoCount());
 

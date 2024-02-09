@@ -46,6 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pier Bruno Pompilii &lt;pier340@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -60,35 +65,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.TodoAngularRefactor.addToList.executor": "Run",
-    "Gradle.TodoAngularRefactor.cancelModify.executor": "Run",
-    "Gradle.TodoAngularRefactor.clearTodoByXTest.executor": "Run",
-    "Gradle.TodoAngularRefactor.markAsIncompleteTest.executor": "Run",
-    "Gradle.TodoAngularRefactor.markComplete.executor": "Run",
-    "Gradle.TodoAngularRefactor.markTodoAsCompletedTest.executor": "Run",
-    "Gradle.TodoAngularRefactor.modifyItems.executor": "Run",
-    "Gradle.TodoAngularRefactor.todoCountTest.executor": "Run",
-    "Gradle.TodoMVC.addingItems.executor": "Run",
-    "Gradle.TodoMVC.cancelModify.executor": "Run",
-    "Gradle.TodoMVC.clearItemByX.executor": "Run",
-    "Gradle.TodoMVC.displayClearCompleted.executor": "Run",
-    "Gradle.TodoMVC.hiddenStatusBar.executor": "Run",
-    "Gradle.TodoMVC.incomplete.executor": "Run",
-    "Gradle.TodoMVC.modifyItems.executor": "Run",
-    "Gradle.TodoMVC.testClearCompleted.executor": "Run",
-    "Gradle.TodoMVC.tickOff.executor": "Run",
-    "Gradle.TodoMVC.todoBleedOver.executor": "Run",
-    "Gradle.TodoMVC.todoCount.executor": "Run",
-    "Gradle.TodoMVC.toggleStatus.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.TodoAngularRefactor.addToList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.cancelModify.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.clearTodoByXTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.markAsIncompleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.markComplete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.markTodoAsCompletedTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.modifyItems.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoAngularRefactor.todoCountTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.addingItems.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.cancelModify.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.clearItemByX.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.displayClearCompleted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.hiddenStatusBar.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.incomplete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.modifyItems.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.testClearCompleted.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.tickOff.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.todoBleedOver.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.todoCount.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMVC.toggleStatus.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.TodoAngularRefactor.todoCountTest">
     <configuration name="TodoAngularRefactor.clearTodoByXTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -226,9 +231,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TodoAngularRefactor.todoCountTest" />
-        <item itemvalue="Gradle.TodoAngularRefactor.clearTodoByXTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.markAsIncompleteTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.markTodoAsCompletedTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.clearTodoByXTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.markComplete" />
       </list>
     </recent_temporary>
@@ -265,12 +270,22 @@
       <option name="project" value="LOCAL" />
       <updated>1707406109035</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/TodoAngularRefactor.java">
+      <option name="closed" value="true" />
+      <created>1707477065276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707477065276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="More tests in TodoMCV" />
     <MESSAGE value="Added Assertions to tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Assertions to tests" />
+    <MESSAGE value="Starting to refactor tests plus a comment change" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/TodoAngularRefactor.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/TodoAngularRefactor.java" />
   </component>
 </project>

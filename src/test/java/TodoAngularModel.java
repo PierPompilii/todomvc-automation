@@ -63,17 +63,22 @@ public class TodoAngularModel {
         WebElement page = driver.findElement(pageBy);
         page.click();
     }
-    public Boolean markCompleted() {
-        WebElement tickTodo = driver.findElement(tickBoxFirstTodoBy);
-        tickTodo.click();
-        WebElement completeTodo = driver.findElement(statusCompletedBy);
-        completeTodo.click();
-        return completeTodo.isDisplayed();
+
+    public void tickBoxFirst() {
+        WebElement tickBox = driver.findElement(tickBoxFirstTodoBy);
+        tickBox.click();
     }
-    public Boolean markIncomplete() {
+    public Boolean isCompleted() {
+        WebElement statusCompleted = driver.findElement(statusCompletedBy);
+        statusCompleted.click();
+        WebElement firstTodo = driver.findElement(firstTodoBy);
+        return firstTodo.isDisplayed();
+    }
+    public Boolean isNotComplete() {
         WebElement statusActive = driver.findElement(statusActiveBy);
         statusActive.click();
-        return statusActive.isDisplayed();
+        WebElement firstTodo = driver.findElement(firstTodoBy);
+        return firstTodo.isDisplayed();
     }
     public String getTodoList(){
         WebElement todoList = driver.findElement(todoListBy);
