@@ -1,3 +1,4 @@
+import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -74,8 +75,30 @@ public class TodoAngularRefactor {
         modelPage.tickBoxFirst();
         modelPage.addTodo("buy bread");
         Assertions.assertEquals("2 items left", modelPage.getTodoCount());
-
     }
+    @Test
+    public void hiddenStatusBar() {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.clearItemByX();
+        Assertions.assertFalse(modelPage.statusBar());
+    }
+
+    @Test
+    public void toggleStatusBarTest () {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.addTodo("buy bread");
+        modelPage.tickBoxFirst();
+        modelPage.statusAll();
+        Assertions.assertTrue(modelPage.firstTodoDisplayed());
+        Assertions.assertTrue(modelPage.secondTodoDisplayed());
+        modelPage.statusActive();
+        Assertions.assertTrue(modelPage.firstTodoDisplayed());
+        modelPage.statusCompleted();
+        Assertions.assertTrue(modelPage.firstTodoDisplayed());
+    }
+
 
 
     @AfterAll

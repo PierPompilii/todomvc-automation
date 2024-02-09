@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Added Assertions to tests">
+    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Starting to refactor tests plus a comment change">
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" afterDir="false" />
     </list>
@@ -65,37 +65,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.TodoAngularRefactor.addToList.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.cancelModify.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.clearTodoByXTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.markAsIncompleteTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.markComplete.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.markTodoAsCompletedTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.modifyItems.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoAngularRefactor.todoCountTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.addingItems.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.cancelModify.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.clearItemByX.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.displayClearCompleted.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.hiddenStatusBar.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.incomplete.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.modifyItems.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.testClearCompleted.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.tickOff.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.todoBleedOver.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.todoCount.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TodoMVC.toggleStatus.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.TodoAngularRefactor.addToList.executor": "Run",
+    "Gradle.TodoAngularRefactor.cancelModify.executor": "Run",
+    "Gradle.TodoAngularRefactor.clearTodoByXTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.hiddenStatusBar.executor": "Run",
+    "Gradle.TodoAngularRefactor.markAsIncompleteTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.markComplete.executor": "Run",
+    "Gradle.TodoAngularRefactor.markTodoAsCompletedTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.modifyItems.executor": "Run",
+    "Gradle.TodoAngularRefactor.todoCountTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.toggleStatusBarTest.executor": "Run",
+    "Gradle.TodoMVC.addingItems.executor": "Run",
+    "Gradle.TodoMVC.cancelModify.executor": "Run",
+    "Gradle.TodoMVC.clearItemByX.executor": "Run",
+    "Gradle.TodoMVC.displayClearCompleted.executor": "Run",
+    "Gradle.TodoMVC.hiddenStatusBar.executor": "Run",
+    "Gradle.TodoMVC.incomplete.executor": "Run",
+    "Gradle.TodoMVC.modifyItems.executor": "Run",
+    "Gradle.TodoMVC.testClearCompleted.executor": "Run",
+    "Gradle.TodoMVC.tickOff.executor": "Run",
+    "Gradle.TodoMVC.todoBleedOver.executor": "Run",
+    "Gradle.TodoMVC.todoCount.executor": "Run",
+    "Gradle.TodoMVC.toggleStatus.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.TodoAngularRefactor.todoCountTest">
-    <configuration name="TodoAngularRefactor.clearTodoByXTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}]]></component>
+  <component name="RunManager" selected="Gradle.TodoAngularRefactor.toggleStatusBarTest">
+    <configuration name="TodoAngularRefactor.hiddenStatusBar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +110,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.clearTodoByXTest&quot;" />
+            <option value="&quot;TodoAngularRefactor.hiddenStatusBar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,30 +135,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;TodoAngularRefactor.markAsIncompleteTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TodoAngularRefactor.markComplete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.markComplete&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,6 +193,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TodoAngularRefactor.toggleStatusBarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TodoAngularRefactor.toggleStatusBarTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="todomvc-automation" />
       <method v="2">
@@ -230,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TodoAngularRefactor.toggleStatusBarTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.hiddenStatusBar" />
         <item itemvalue="Gradle.TodoAngularRefactor.todoCountTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.markAsIncompleteTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.markTodoAsCompletedTest" />
-        <item itemvalue="Gradle.TodoAngularRefactor.clearTodoByXTest" />
-        <item itemvalue="Gradle.TodoAngularRefactor.markComplete" />
       </list>
     </recent_temporary>
   </component>

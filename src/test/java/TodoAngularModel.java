@@ -40,6 +40,7 @@ public class TodoAngularModel {
         WebElement firstTodo = driver.findElement(firstTodoBy);
         return firstTodo.getText();
     }
+
     public String getSecondTodo() {
         WebElement secondTodo = driver.findElement(secondTodoBy);
         return secondTodo.getText();
@@ -68,22 +69,26 @@ public class TodoAngularModel {
         WebElement tickBox = driver.findElement(tickBoxFirstTodoBy);
         tickBox.click();
     }
+
     public Boolean isCompleted() {
         WebElement statusCompleted = driver.findElement(statusCompletedBy);
         statusCompleted.click();
         WebElement firstTodo = driver.findElement(firstTodoBy);
         return firstTodo.isDisplayed();
     }
+
     public Boolean isNotComplete() {
         WebElement statusActive = driver.findElement(statusActiveBy);
         statusActive.click();
         WebElement firstTodo = driver.findElement(firstTodoBy);
         return firstTodo.isDisplayed();
     }
-    public String getTodoList(){
+
+    public String getTodoList() {
         WebElement todoList = driver.findElement(todoListBy);
         return todoList.getText();
     }
+
     public void clearItemByX() {
         WebElement firstTodo = driver.findElement(firstTodoBy);
         Actions hover = new Actions(driver);
@@ -91,10 +96,39 @@ public class TodoAngularModel {
         WebElement xButton = driver.findElement(xButtonBy);
         xButton.click();
     }
+
     public String getTodoCount() {
         WebElement todoCount = driver.findElement(todoCountBy);
         return todoCount.getText();
     }
 
+    public Boolean statusBar() {
+        WebElement statusBar = driver.findElement(statusBarBy);
+        return statusBar.isDisplayed();
+    }
+
+    public Boolean firstTodoDisplayed() {
+        WebElement firstTodo = driver.findElement(firstTodoBy);
+        return firstTodo.isDisplayed();
+    }
+
+    public Boolean secondTodoDisplayed() {
+        WebElement secondTodo = driver.findElement(secondTodoBy);
+        return secondTodo.isDisplayed();
+    }
+
+    public void statusActive() {
+        WebElement statusActive = driver.findElement(statusActiveBy);
+        statusActive.click();
+    }
+
+    public void statusCompleted() {
+        WebElement statusCompleted = driver.findElement(statusCompletedBy);
+        statusCompleted.click();
+    }
+    public void statusAll () {
+        WebElement statusAll = driver.findElement(statusAllBy);
+        statusAll.click();
+    }
 
 }
