@@ -103,8 +103,7 @@ public class TodoAngularRefactor {
         TodoAngularModel modelPage = new TodoAngularModel(driver);
         modelPage.addTodo("buy milk");
         modelPage.tickBoxFirst();
-        modelPage.clearButton();
-        Assertions.assertTrue(modelPage.isCompleted());
+        Assertions.assertTrue(modelPage.clearButtonDisplayed());
     }
     @Test
     public void clearCompletedTest() {
@@ -115,7 +114,6 @@ public class TodoAngularRefactor {
         Assertions.assertEquals("",modelPage.getTodoList());
 
     }
-
 
     @AfterAll
     static void closeBrowser() {
