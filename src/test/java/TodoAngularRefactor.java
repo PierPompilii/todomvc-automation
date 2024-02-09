@@ -98,7 +98,23 @@ public class TodoAngularRefactor {
         modelPage.statusCompleted();
         Assertions.assertTrue(modelPage.firstTodoDisplayed());
     }
+    @Test
+    public void displayClearCompletedTest () {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.tickBoxFirst();
+        modelPage.clearButton();
+        Assertions.assertTrue(modelPage.isCompleted());
+    }
+    @Test
+    public void clearCompletedTest() {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        modelPage.tickBoxFirst();
+        modelPage.clearButton();
+        Assertions.assertEquals("",);
 
+    }
 
 
     @AfterAll

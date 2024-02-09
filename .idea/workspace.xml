@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Starting to refactor tests plus a comment change">
+    <list default="true" id="ad8aab74-6cc9-4407-a4f0-15408d0d55d2" name="Changes" comment="Refactor toggleStatusBar">
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TodoAngularRefactor.java" afterDir="false" />
     </list>
@@ -69,7 +69,9 @@
   "keyToString": {
     "Gradle.TodoAngularRefactor.addToList.executor": "Run",
     "Gradle.TodoAngularRefactor.cancelModify.executor": "Run",
+    "Gradle.TodoAngularRefactor.clearCompletedTest.executor": "Run",
     "Gradle.TodoAngularRefactor.clearTodoByXTest.executor": "Run",
+    "Gradle.TodoAngularRefactor.displayClearCompletedTest.executor": "Run",
     "Gradle.TodoAngularRefactor.hiddenStatusBar.executor": "Run",
     "Gradle.TodoAngularRefactor.markAsIncompleteTest.executor": "Run",
     "Gradle.TodoAngularRefactor.markComplete.executor": "Run",
@@ -96,7 +98,55 @@
     "last_opened_file_path": "/Users/muhtadimaahir/QA_Projects/todo-automation/todomvc-automation"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TodoAngularRefactor.toggleStatusBarTest">
+  <component name="RunManager" selected="Gradle.TodoAngularRefactor.clearCompletedTest">
+    <configuration name="TodoAngularRefactor.clearCompletedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TodoAngularRefactor.clearCompletedTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoAngularRefactor.displayClearCompletedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TodoAngularRefactor.displayClearCompletedTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TodoAngularRefactor.hiddenStatusBar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -111,54 +161,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;TodoAngularRefactor.hiddenStatusBar&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TodoAngularRefactor.markAsIncompleteTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.markAsIncompleteTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TodoAngularRefactor.markTodoAsCompletedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TodoAngularRefactor.markTodoAsCompletedTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -232,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TodoAngularRefactor.clearCompletedTest" />
+        <item itemvalue="Gradle.TodoAngularRefactor.displayClearCompletedTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.toggleStatusBarTest" />
         <item itemvalue="Gradle.TodoAngularRefactor.hiddenStatusBar" />
         <item itemvalue="Gradle.TodoAngularRefactor.todoCountTest" />
-        <item itemvalue="Gradle.TodoAngularRefactor.markAsIncompleteTest" />
-        <item itemvalue="Gradle.TodoAngularRefactor.markTodoAsCompletedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707477065276</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor toggleStatusBar">
+      <option name="closed" value="true" />
+      <created>1707482211466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707482211466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,6 +298,7 @@
     <MESSAGE value="Added Assertions to tests" />
     <MESSAGE value="Starting to refactor tests plus a comment change" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/TodoAngularRefactor.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;src/test/java/TodoAngularRefactor.java" />
+    <MESSAGE value="Refactor toggleStatusBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor toggleStatusBar" />
   </component>
 </project>

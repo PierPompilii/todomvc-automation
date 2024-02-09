@@ -130,5 +130,9 @@ public class TodoAngularModel {
         WebElement statusAll = driver.findElement(statusAllBy);
         statusAll.click();
     }
+    public WebElement clearButton () {
+        WebElement clearButton = driver.findElement(clearCompletedButtonBy);
+        return clearButton;
+    }
 
 }
