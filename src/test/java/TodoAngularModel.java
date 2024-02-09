@@ -24,6 +24,7 @@ public class TodoAngularModel {
     private By todoCountBy = By.className("todo-count");
     private By statusBarBy = By.tagName("app-todo-footer");
     private By clearCompletedButtonBy = By.cssSelector(".clear-completed");
+    private By todoListVueBy = By.className("todo-list");
 
     public TodoAngularModel(ChromeDriver driver) {
         this.driver = driver;
@@ -137,5 +138,10 @@ public class TodoAngularModel {
     public void clearButtonCompleted () {
         WebElement clearButtonCompleted = driver.findElement(clearCompletedButtonBy);
         clearButtonCompleted.click();
+    }
+    public String getTodoListVue() {
+        WebElement todoListVue = driver.findElement(todoListVueBy);
+        return todoListVue.getText();
+
     }
 }

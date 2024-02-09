@@ -230,6 +230,8 @@ public class TodoMVC {
         inputBox.sendKeys("buy milk");
         inputBox.sendKeys(Keys.ENTER);
         driver.get("https://todomvc.com/examples/vue/dist/#/");
+        WebElement todoListVue = driver.findElement(By.className("todo-list"));
+        Assertions.assertEquals("", todoListVue.getText());
         //assert list is empty
     }
 

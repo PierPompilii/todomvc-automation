@@ -112,7 +112,13 @@ public class TodoAngularRefactor {
         modelPage.tickBoxFirst();
         modelPage.clearButtonCompleted();
         Assertions.assertEquals("",modelPage.getTodoList());
-
+    }
+    @Test
+    public void todoBleedOverTest () {
+        TodoAngularModel modelPage = new TodoAngularModel(driver);
+        modelPage.addTodo("buy milk");
+        driver.get("https://todomvc.com/examples/vue/dist/#/");
+        Assertions.assertEquals("",modelPage.getTodoListVue());
     }
 
     @AfterAll
