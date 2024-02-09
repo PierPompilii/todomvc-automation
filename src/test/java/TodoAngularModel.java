@@ -134,5 +134,8 @@ public class TodoAngularModel {
         WebElement clearButton = driver.findElement(clearCompletedButtonBy);
         return clearButton;
     }
-
+    public void clearButtonCompleted () {
+        WebElement clearButtonCompleted = driver.findElement(clearCompletedButtonBy);
+        clearButtonCompleted.click();
+    }
 }

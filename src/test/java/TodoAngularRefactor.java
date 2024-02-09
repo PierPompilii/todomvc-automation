@@ -111,8 +111,8 @@ public class TodoAngularRefactor {
         TodoAngularModel modelPage = new TodoAngularModel(driver);
         modelPage.addTodo("buy milk");
         modelPage.tickBoxFirst();
-        modelPage.clearButton();
-        Assertions.assertEquals("",);
+        modelPage.clearButtonCompleted();
+        Assertions.assertEquals("",modelPage.getTodoList());
 
     }
 
